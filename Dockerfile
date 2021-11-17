@@ -269,6 +269,7 @@ RUN apk --update --no-cache add \
     php7-zlib \
     python3 \
     py3-pip \
+    openssh \
     py3-paramiko \
     lftp \
     shadow \
