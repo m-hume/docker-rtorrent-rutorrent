@@ -265,16 +265,16 @@ RUN apk --update --no-cache add \
     php7-session \
     php7-sockets \
     php7-xml \
-    php7-simplexml \
     php7-zip \
     php7-zlib \
     python3 \
     py3-pip \
     # mh additions start
+    php7-simplexml \
+    php7-sqlite3 \
     openssh \
     py3-paramiko \
     lftp \
-    php7-sqlite3 \
     # mh additions end
     shadow \
     sox \
