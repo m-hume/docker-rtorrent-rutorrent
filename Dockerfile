@@ -270,6 +270,7 @@ RUN apk --update --no-cache add \
     python3 \
     py3-pip \
     py3-paramiko \
+    lftp \
     shadow \
     sox \
     tar \
