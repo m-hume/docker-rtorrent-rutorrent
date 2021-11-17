@@ -229,6 +229,7 @@ ENV PYTHONPATH="$PYTHONPATH:/var/www/rutorrent" \
   PUID="1000" \
   PGID="1000"
 
+# https://dl-cdn.alpinelinux.org/alpine/v3.14/community/x86_64/
 ARG NGINX_UID
 ARG NGINX_GID
 RUN apk --update --no-cache add \
