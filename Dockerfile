@@ -264,6 +264,7 @@ RUN apk --update --no-cache add \
     php7-session \
     php7-sockets \
     php7-xml \
+    php7-simplexml \
     php7-zip \
     php7-zlib \
     python3 \
@@ -281,7 +282,7 @@ RUN apk --update --no-cache add \
   && addgroup -g ${NGINX_UID} -S nginx \
   && adduser -S -D -H -u ${NGINX_GID} -h /var/cache/nginx -s /sbin/nologin -G nginx -g nginx nginx \
   && pip3 install --upgrade pip \
-  && pip3 install cfscrape cloudscraper \
+  && pip3 install cfscrape cloudscraper paramiko \
   && addgroup -g ${PGID} rtorrent \
   && adduser -D -H -u ${PUID} -G rtorrent -s /bin/sh rtorrent \
   && curl --version \
