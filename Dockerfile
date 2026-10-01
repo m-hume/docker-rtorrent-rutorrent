@@ -15,7 +15,7 @@ ARG NGINX_UID=102
 ARG NGINX_GID=102
 
 FROM --platform=${BUILDPLATFORM:-linux/amd64} crazymax/alpine-s6:${ALPINE_S6_TAG} AS download
-RUN apk --update --no-cache add curl git subversion tar tree xz
+RUN apk --update --no-cache add curl git subversion tar tree xz sqlite3 php7-pdo php7-pdo_sqlite
 
 ARG XMLRPC_VERSION
 WORKDIR /dist/xmlrpc-c
